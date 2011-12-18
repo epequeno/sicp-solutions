@@ -4,8 +4,8 @@
 (define (square n) (* n n))
 
 (define (sum-of-squares a b c) 
-(cond (= (min a b c) a) (+ (square b) (square c))
-      (= (min a b c) b) (+ (square a) (square c))
-      (else (+ (square a) (square b)))))
+(cond ((= (min a b c) a) (+ (square b) (square c)))
+      ((= (min a b c) b) (+ (square a) (square c)))
+      ((= (min a b c) c) (+ (square a) (square b)))))
 (display (sum-of-squares 5 4 3))
 (newline)
