@@ -28,11 +28,11 @@
 ; Nothing will print, the variable 'a' will be set to 3
 
 (define b (+ a 1))
-; Nothing will print, the variable 'b' will be set to a plus 1, 4
+; Nothing will print, the variable 'b' will be set to 'a' (3) plus 1, 4
 
 (display (+ a b (* a b)))
-; Will print the product of a and b, 12 and the sum of that product with 
-; a and b so 3 + 4 + 12, 19
+; Will print the product of 'a' and 'b', 12 and the sum of that product with 
+; 'a' and 'b' so 3 + 4 + 12, 19
 (newline)
 
 (display (= a b))
