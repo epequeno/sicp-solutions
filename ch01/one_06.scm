@@ -61,3 +61,4 @@
 ; would throw a 'divide by 0' error if all params were evaluated but, scm does 
 ; not. When loaded into scm, this file will return '1' with no errors with both
 ; 'if' and 'new-if'. 
+; http://danboykis.com/2009/05/exercise-16-of-sicp/
