@@ -31,7 +31,7 @@
 ; Nothing will print, the variable 'b' will be set to 'a' (3) plus 1, 4
 
 (display (+ a b (* a b)))
-; Will print the product of 'a' and 'b', 12 and the sum of that product with 
+; Will print the product of 'a' and 'b', 12 and the sum of that product with
 ; 'a' and 'b' so 3 + 4 + 12, 19
 (newline)
 
@@ -43,7 +43,7 @@
     (display b)
     (display a))
 ; Will test if the product of a and b is greater than b, in this case it is
-; true, it will also test if b is greater than a, also true. In the case 
+; true, it will also test if b is greater than a, also true. In the case
 ; that both those tests are true, the first consequent is produced, b
 ; had either been false then a would have been printed.
 (newline)
@@ -52,8 +52,8 @@
       ((= b 4) (display (+ 6 7 a)))
       (else (display 25)))
 ; Tests several conditions, the first is if a is equal to 4, not true
-; the second test is if b is equal to 4 which is true, so the sum of 
-; 6, 7, and a is printed so 16. Had that not been true then 25 would 
+; the second test is if b is equal to 4 which is true, so the sum of
+; 6, 7, and a is printed so 16. Had that not been true then 25 would
 ; have been printed since no previous test was true.
 (newline)
 
@@ -66,8 +66,8 @@
                   ((< a b) b)
                   (else -1))
             (+ a 1)))
-; Tests several conditions, if a is greater than b (not true) a would be 
-; displayed. The second condition, a less than b (true) gets evaluated so 
-; b is returned and multiplied with the sum of a and 1 (4) so the final 
+; Tests several conditions, if a is greater than b (not true) a would be
+; displayed. The second condition, a less than b (true) gets evaluated so
+; b is returned and multiplied with the sum of a and 1 (4) so the final
 ; result is 16
 (newline)
